@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:sans-serif;
+}
+
+.navbar-custom{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+
+    background:#000000;
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.1);
+}
+
+.container-nav{
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:1rem 2rem;
+}
+
+.logo{
+    text-decoration:none;
+    color:#fff;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.logo span{
+    color: #D4AF37;
+}
+
+.logo span:hover{
+    color: #FFD700;
+}
+
+
+.nav-desktop{
+    display:flex;
+    gap:2rem;
+    list-style:none;
+}
+
+.nav-desktop li a{
+    color: #D4AF37;
+}
+
+.nav-desktop li a:hover{
+    color: #FFD700;
+    border-bottom: 1px solid #D4AF37;
+    padding-bottom: 5px;
+}
+
+
+.nav-desktop a{
+    text-decoration:none;
+    color:black;
+}
+
+/* BOTON MOBILE */
+
+.menu-btn{
+    display:none;
+    border:none;
+    background:none;
+    font-size:2rem;
+    cursor:pointer;
+    color: #D4AF37;
+}
+
+/* MENU LATERAL */
+
+.menu-mobile{
+    position:fixed;
+    top:0;
+    right:-300px;
+
+    width:300px;
+    height:100vh;
+
+    background:rgb(75, 75, 75);
+
+    display:flex;
+    flex-direction:column;
+
+    padding:5rem 2rem;
+    gap:2rem;
+
+    transition:.3s ease;
+
+    z-index:2000;
+}
+
+.menu-mobile.active{
+    right:0;
+}
+
+.menu-mobile a{
+    text-decoration:none;
+    color:black;
+    font-size:1.2rem;
+}
+
+.close-btn{
+    position:absolute;
+    top:20px;
+    right:20px;
+
+    border:none;
+    background:none;
+
+    font-size:1.8rem;
+    cursor:pointer;
+}
+
+/* FONDO OSCURO */
+
+.overlay{
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.5);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:1500;
+}
+
+.overlay.active{
+    opacity:1;
+    visibility:visible;
+}
+
+
+/* HEADER */
+
+
+.header{ 
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("../img/tribunalfoto.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+    .nav-desktop{
+        display:none;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+}
