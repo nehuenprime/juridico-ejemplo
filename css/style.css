@@ -8,15 +8,19 @@ body{
     font-family:sans-serif;
 }
 
-.navbar-custom{
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:1000;
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 
-    background:#000000;
-    backdrop-filter:blur(12px);
-    border-bottom:1px solid rgba(0,0,0,.1);
+    background-image: linear-gradient(#222, transparent);
+
+    transition: background-color .3s ease;
+}
+
+.navbar-custom.scrolled {
+    background: rgba(0, 0, 0, 0.95);
 }
 
 .container-nav{
@@ -58,8 +62,6 @@ body{
 
 .nav-desktop li a:hover{
     color: #FFD700;
-    border-bottom: 1px solid #D4AF37;
-    padding-bottom: 5px;
 }
 
 
@@ -89,7 +91,7 @@ body{
     width:300px;
     height:100vh;
 
-    background:rgb(75, 75, 75);
+    background:#000000d5;
 
     display:flex;
     flex-direction:column;
@@ -108,7 +110,13 @@ body{
 
 .menu-mobile a{
     text-decoration:none;
-    color:black;
+    color:white;
+    font-size:1.2rem;
+}
+
+.menu-mobile a:hover{
+    text-decoration:none;
+    color:#c49b4e;
     font-size:1.2rem;
 }
 
@@ -122,6 +130,11 @@ body{
 
     font-size:1.8rem;
     cursor:pointer;
+    color: white;
+}
+
+.close-btn:hover{
+    color: #c49b4e;
 }
 
 /* FONDO OSCURO */
@@ -151,7 +164,7 @@ body{
 
 .header{ 
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.534)),
         url("../img/tribunalfoto.jpg");
     background-size: cover;
     background-position: center;
@@ -160,12 +173,43 @@ body{
 }
 
 
+/* SECTION DE PRESENTACION */
+
+.hero-content {
+    padding-top: 150px;
+    margin-left: 4rem;
+
+    max-width: 750px;
+}
 
 
+.hero-label {
+    color: #b99a55;
+    font-size: .75rem;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
 
+.hero-content h1 {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
 
+.hero-content h1 span {
+    color: #c49b4e;
+    font-style: italic;
+}
 
-
+.hero-description {
+    color: #ccc;
+    max-width: 600px;
+    line-height: 1.8;
+    margin-top: 30px;
+}
 
 
 
