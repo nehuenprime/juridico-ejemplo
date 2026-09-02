@@ -297,7 +297,94 @@ body{
 }
 
 
+/* FAQ SECTION */
 
+.faq {
+    padding: 70px 45px;
+}
+
+.faq-item {
+    max-width: 780px;
+    border-bottom: 1px solid #332b17;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.faq-h2{
+    color: white;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 15px;
+    margin-left: 2.8125rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.faq-h2 span{
+    color: #b8943e;
+    font-style: italic;
+}
+
+.faq-h5{
+    color: #b8943e;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 15px;
+    margin-left: 2.8125rem;
+    margin-top: 30px;
+}
+
+summary:hover{
+    color: #b8943e;
+}
+
+details[open] summary{
+    color: #b8943e;
+}
+
+
+details {
+    color: white;
+}
+
+summary {
+    position: relative;
+    padding: 25px 40px 25px 0;
+
+    cursor: pointer;
+    list-style: none;
+
+    font-size: 1rem;
+}
+
+/* Sacamos el triangulito default */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* + */
+summary::after {
+    content: "+";
+
+    position: absolute;
+    right: 0;
+
+    color: #c99b36;
+    font-size: 1.4rem;
+}
+
+/* cuando está abierto pasa a - */
+details[open] summary::after {
+    content: "−";
+}
+
+details p {
+    margin: 0;
+    padding: 0 40px 25px 0;
+
+    color: #999;
+    line-height: 1.7;
+}
 
 
 
@@ -314,4 +401,18 @@ body{
         display:block;
     }
 
+}
+
+/* GRID RESPONSIVE */
+
+@media (max-width: 900px) {
+    .areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .areas-grid {
+        grid-template-columns: 1fr;
+    }
 }
