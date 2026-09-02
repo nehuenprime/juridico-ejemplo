@@ -6,6 +6,8 @@
 
 body{
     font-family:sans-serif;
+    background-color: #000;
+    scroll-behavior: smooth;
 }
 
 .navbar-custom {
@@ -21,6 +23,7 @@ body{
 
 .navbar-custom.scrolled {
     background: rgba(0, 0, 0, 0.95);
+    border-bottom: 1px solid #b99a55;
 }
 
 .container-nav{
@@ -42,7 +45,7 @@ body{
 }
 
 .logo span{
-    color: #D4AF37;
+    color: #c49b4e;
 }
 
 .logo span:hover{
@@ -57,7 +60,7 @@ body{
 }
 
 .nav-desktop li a{
-    color: #D4AF37;
+    color: #c49b4e;
 }
 
 .nav-desktop li a:hover{
@@ -185,7 +188,7 @@ body{
 
 .hero-label {
     color: #b99a55;
-    font-size: .75rem;
+    font-size: .55rem;
     letter-spacing: 4px;
     margin-bottom: 25px;
 }
@@ -214,16 +217,84 @@ body{
 
 
 
+/* MAIN SECTION TABLAS GRID */
 
 
 
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
 
+    background: #111;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
 
+.area-card {
+    padding: 40px 35px;
+    min-height: 230px;
+    margin: 1px;
 
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
 
+.area-card span {
+    display: block;
 
+    color: #b8943e;
+    font-style: italic;
+    font-size: 1.1rem;
 
+    margin-bottom: 20px;
+}
 
+.area-card h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.area-card p {
+    color: #777;
+    line-height: 1.7;
+    font-size: .9rem;
+}
+
+.area-card:hover{
+    background-color: #222;
+    border-bottom: 1px solid #b8943e;
+}
+
+.section-texto-main{
+    margin-top: 3.45rem;
+}
+
+.texto-h2{
+    color: white;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 15px;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.texto-h2 span{
+    color: #b8943e;
+    font-style: italic;
+}
+
+.texto-h5{
+    color: #b8943e;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 15px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
 
 
 
