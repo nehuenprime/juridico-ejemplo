@@ -2,12 +2,12 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     font-family:sans-serif;
     background-color: #000;
-    scroll-behavior: smooth;
 }
 
 .navbar-custom {
@@ -244,6 +244,24 @@ body{
     background-color: #b19452;
 }
 
+.btn-header-mobile{
+        margin-left: -2.5rem;
+        padding: 1.5rem;
+        margin-top: 3rem;
+        font-size: 1rem;
+        background-color: #b8943e;
+        border: none;
+        display: none;
+    }
+
+.btn-header-mobile:hover{
+    background-color: #b19452;
+}
+
+
+.mobile-a{
+    text-decoration: none;
+}
 
 /* MAIN SECTION TABLAS GRID */
 
@@ -417,7 +435,7 @@ details p {
 
 
 
-/* RESPONSIVE */
+/* SECCION RESPONSIVE */
 
 @media (max-width:768px){
 
@@ -427,6 +445,30 @@ details p {
 
     .menu-btn{
         display:block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        margin-left: -2.5rem;
+    }
+
+    .hero-content .hero-label{
+        margin-left: -2.5rem;
+    }
+
+    .hero-description {
+        margin-left: -2.5rem;
+    }
+
+    .btn-header-mobile{
+        display: block;
+    }
+
+    .btn-header{
+        display: none;
     }
 
 }
