@@ -232,10 +232,10 @@ body{
 }
 
 .btn-header{
-    padding: 1rem;
+    padding: 1.6rem;
     margin: 1rem 0;
     margin-top: 2rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     background-color: #b8943e;
     border: none;
 }
@@ -244,24 +244,6 @@ body{
     background-color: #b19452;
 }
 
-.btn-header-mobile{
-        margin-left: -2.5rem;
-        padding: 1.5rem;
-        margin-top: 3rem;
-        font-size: 1rem;
-        background-color: #b8943e;
-        border: none;
-        display: none;
-    }
-
-.btn-header-mobile:hover{
-    background-color: #b19452;
-}
-
-
-.mobile-a{
-    text-decoration: none;
-}
 
 /* MAIN SECTION TABLAS GRID */
 
@@ -453,6 +435,7 @@ details p {
     .hero-content h1 {
         font-size: 2.5rem;
         margin-left: -2.5rem;
+        max-width: 360px;
     }
 
     .hero-content .hero-label{
@@ -461,13 +444,19 @@ details p {
 
     .hero-description {
         margin-left: -2.5rem;
-    }
-
-    .btn-header-mobile{
-        display: block;
+        max-width: 320px;
     }
 
     .btn-header{
+        margin-left: -2.5rem;
+        padding: 1.6rem;
+        margin-top: 3rem;
+        font-size: 1rem;
+        background-color: #b8943e;
+        border: none;
+    }
+
+    .btn-header span{
         display: none;
     }
 
