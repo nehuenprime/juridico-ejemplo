@@ -73,6 +73,7 @@ body{
     color:black;
 }
 
+
 /* BOTON MOBILE */
 
 .menu-btn{
@@ -175,6 +176,22 @@ body{
     min-height: 100vh;
 }
 
+.wsp-style{
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    margin-left: 1rem;  
+    margin-right: 1rem;  
+    bottom: 0;
+    margin-bottom: 1.5rem; 
+}
+
+.wsp-logo{
+    width: 3.8rem;
+}
+.wsp-logo:hover{
+    filter: brightness(150%);
+}
 
 /* SECTION DE PRESENTACION */
 
@@ -214,7 +231,18 @@ body{
     margin-top: 30px;
 }
 
+.btn-header{
+    padding: 1rem;
+    margin: 1rem 0;
+    margin-top: 2rem;
+    font-size: 1rem;
+    background-color: #b8943e;
+    border: none;
+}
 
+.btn-header:hover{
+    background-color: #b19452;
+}
 
 
 /* MAIN SECTION TABLAS GRID */
