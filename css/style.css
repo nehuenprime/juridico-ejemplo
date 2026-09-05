@@ -424,11 +424,13 @@ details p {
 .section-contact{
     background-color: #111;
     border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
     border-image: linear-gradient(to right, transparent, #b8943e88, transparent) 1;
 
     display: grid;
     place-items: center;
     font-family: 'Times New Roman', Times, serif;
+    padding: 2rem;
 }
 
 .contact-h5{
@@ -457,10 +459,52 @@ details p {
     text-align: center;
     max-width: 600px;
     margin-top: 22px;
-    color: #d3d3d3;
-    font-size: 18px;
+    color: #c9c9c9;
     font-weight: lighter;
+    font-family: sans-serif;
 }
+
+.btn-contacto{
+    padding: 1.6rem;
+    margin: 1rem 0;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    background-color: #25d366;
+    border: none;
+}
+
+.btn-contacto:hover{
+    filter: brightness(130%)
+}
+
+.wsp-contact{
+    margin-right: 7px;
+    margin-bottom: -.3rem;
+    width: 1.3rem;
+}
+
+
+.btn-contacto-email{
+    padding: 1.6rem;
+    margin: 1rem 0;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    background-color: #b8943e;
+    border: none;
+}
+
+.btn-contacto-email:hover{
+    filter: brightness(130%)
+}
+
+.email-contact{
+    margin-right: 7px;
+    margin-bottom: -.3rem;
+    width: 1.3rem;
+}
+
+
+
 
 
 
