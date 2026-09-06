@@ -430,7 +430,7 @@ details p {
     display: grid;
     place-items: center;
     font-family: 'Times New Roman', Times, serif;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .contact-h5{
@@ -504,6 +504,35 @@ details p {
 }
 
 
+/* FOOTER */
+
+.h3-footer{
+    color: #fff;
+    margin: 0;
+    padding-left: 4rem;
+}
+.h3-footer span{
+    color: #c49b4e;
+}
+
+.p-footer{
+    color: #888;
+    font-size: .8rem;
+    padding: 2.5rem;
+    text-align: center;
+    margin: 0;
+    padding-right: 4rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 25px;
+    background: #000;
+}
+
 
 
 
@@ -572,6 +601,14 @@ details p {
 @media (max-width: 600px) {
     .areas-grid {
         grid-template-columns: 1fr;
+    }
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .h3-footer{
+        padding: 0;
     }
 }
 
