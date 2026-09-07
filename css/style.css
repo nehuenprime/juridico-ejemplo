@@ -581,6 +581,26 @@ footer {
         display: none;
     }
 
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .h3-footer{
+        padding: 0;
+    }
+    
+    .contact-h2{
+        text-align: left;
+        margin:0;
+    }
+    .contact-h5{
+        text-align: left;
+    }
+    .contact-p{
+        text-align: left;
+    }
+
 }
 
 /* GRID RESPONSIVE */
@@ -601,14 +621,6 @@ footer {
 @media (max-width: 600px) {
     .areas-grid {
         grid-template-columns: 1fr;
-    }
-    footer {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-    .h3-footer{
-        padding: 0;
     }
 }
 
