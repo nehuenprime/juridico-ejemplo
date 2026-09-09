@@ -575,6 +575,8 @@ footer {
 
 .section-emprein{
     padding: 1rem;
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent, #b8943e88, transparent, transparent) 1;
 }
 
 .p-emprein{
@@ -614,7 +616,7 @@ footer {
 @media screen and (max-width: 600px) {
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-left: -2.5rem;
         max-width: 360px;
     }
@@ -626,6 +628,9 @@ footer {
     .hero-description {
         margin-left: -2.5rem;
         max-width: 320px;
+    }
+    .hero-description span{
+        display: none;
     }
 
     .btn-header{
@@ -639,6 +644,10 @@ footer {
 
     .btn-header span{
         display: none;
+    }
+
+    .faq{
+        margin-bottom: 4rem;
     }
 
     footer {
@@ -669,6 +678,14 @@ footer {
     }
     .estudio-p{
         margin-left: .5rem;
+    }
+    .btn-contacto{
+        padding: 1.2rem;
+        margin-bottom: 0;
+    }
+    .btn-contacto-email{
+        padding: 1.2rem;
+        margin: 1rem 0;
     }
 
 }
